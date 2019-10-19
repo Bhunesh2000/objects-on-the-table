@@ -5,8 +5,10 @@ import datetime
 import imutils
 import time
 import cv2
+import pandas
 
 # construct the argument parser and parse the arguments
+
 ap = argparse.ArgumentParser()
 ap.add_argument("-v", "--video", help="path to the video file")
 ap.add_argument("-a", "--min-area", type=int, default=500, help="minimum area size")
@@ -20,6 +22,7 @@ if args.get("video", None) is None:
 # otherwise, we are reading from a video file
 else:
 	vs = cv2.VideoCapture(args["video"])
+
 
 # initialize the first frame in the video stream
 firstFrame = None
