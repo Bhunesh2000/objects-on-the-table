@@ -87,6 +87,6 @@ while True:
 vs.stop() if args.get("video", None) is None else vs.release()
 cv2.destroyAllWindows()		
 
-def tushar():
-	print('Siraj C/O Tushar')
+def tusharR():
+	print('Tushar C/O Siraj')
 	
